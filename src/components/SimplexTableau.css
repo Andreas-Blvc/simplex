@@ -1,0 +1,84 @@
+/* SimplexTableau.css */
+
+.simplex-tableau {
+	width: 98%;
+	border-collapse: collapse;
+	margin: 20px 0;
+  }
+  
+  .simplex-tableau th,
+  .simplex-tableau td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px; /* Set a fixed width */
+	max-width: 100px; /* Ensure the cell doesn't expand beyond this width */
+	white-space: nowrap; /* Prevent text from wrapping */
+	overflow: hidden; /* Hide any overflowing text */
+	text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  }
+  
+  .simplex-tableau th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+  }
+  
+  .simplex-tableau td.clickable-cell {
+	cursor: pointer;
+  }
+  
+  .simplex-tableau td.clickable-cell:hover {
+	background-color: #f1f1f1;
+  }
+  
+  .simplex-tableau .pivot-element {
+	background-color: #ffeb3b;
+	animation: pivot-element-animation 1s ease-in-out;
+  }
+  
+  .simplex-tableau .row-update {
+	background-color: #8bc34a;
+	animation: row-update-animation 1.5s ease-in-out;
+  }
+  
+  .simplex-tableau .column-update {
+	background-color: #03a9f4;
+	animation: column-update-animation 1.5s ease-in-out;
+  }
+  
+  .simplex-tableau .text-transition {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+  }
+  
+  @keyframes pivot-element-animation {
+	0%, 100% {
+	  background-color: #ffeb3b;
+	}
+	50% {
+	  background-color: #ffee58;
+	}
+  }
+  
+  @keyframes row-update-animation {
+	0%, 100% {
+	  background-color: #8bc34a;
+	}
+	50% {
+	  background-color: #aed581;
+	}
+  }
+  
+  @keyframes column-update-animation {
+	0%, 100% {
+	  background-color: #03a9f4;
+	}
+	50% {
+	  background-color: #4fc3f7;
+	}
+  }
+  

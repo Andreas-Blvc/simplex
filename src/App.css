@@ -1,38 +1,90 @@
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px; /* Increased gap for more padding */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.controls {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.control-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.control-item label {
+  flex: 2; /* Give more space to the label */
+  min-width: 200px; /* Ensure the label has a minimum width */
+  text-align: left;
+}
+
+.control-item select {
+  flex: 1; /* Give less space to the select box */
+  text-align: right;
+}
+
+.exercise-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.exercise-text {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: left;
+  width: 100%;
+}
+
+.exercise-text p {
+  margin: 5px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.tableau-container {
+  margin-top: 40px;
+  margin-bottom: 40px; /* Add margin to the bottom for more space */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 100%;
 }

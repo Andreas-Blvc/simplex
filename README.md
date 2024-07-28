@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Simplex Tableau Study Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Simplex Tableau Study Tool is a web application that helps users generate and study simplex tableaus for linear programming exercises. The tool allows users to customize the number of variables and constraints, set the animation speed, and choose the display format for the tableau.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Generate random linear programming exercises with a specified number of variables and constraints.
+- View the objective function and constraints in a readable format.
+- Customize the display format (decimal or fraction).
+- Adjust the animation speed for tableau operations.
+- Study and interact with the generated simplex tableau.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+These instructions will help you set up and run the project on your local machine for development and testing purposes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js (https://nodejs.org/)
+- npm (Node Package Manager, comes with Node.js)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/simplex-tableau-study-tool.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd simplex-tableau-study-tool
+    ```
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Running the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To start the development server, run:
+```sh
+npm start
+```
+This will start the application on `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Building for Production
 
-### `npm run eject`
+To create a production build of the application, run:
+```sh
+npm run build
+```
+This will generate a `build` directory containing the production files.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `src/`: Contains the source code of the application.
+  - `components/`: Contains React components.
+  - `App.js`: Main application component.
+  - `App.css`: Main stylesheet for the application.
+- `public/`: Contains public assets and the `index.html` file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Use the dropdown menus to select the number of variables and constraints for the exercise.
+2. Adjust the animation speed and display format as needed.
+3. Click the "Generate Exercise" button to generate a new linear programming exercise.
+4. Study the generated objective function and constraints.
+5. Interact with the simplex tableau to solve the exercise.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure that your code adheres to the project's coding standards and includes appropriate tests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository.
+2. Create a new branch:
+    ```sh
+    git checkout -b feature/your-feature-name
+    ```
+3. Make your changes.
+4. Commit your changes:
+    ```sh
+    git commit -m 'Add some feature'
+    ```
+5. Push to the branch:
+    ```sh
+    git push origin feature/your-feature-name
+    ```
+6. Create a pull request.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgements
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)

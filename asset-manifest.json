@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/simplex/static/css/main.a8442ae0.css",
+    "main.js": "/simplex/static/js/main.9558155c.js",
+    "static/js/453.e561bf70.chunk.js": "/simplex/static/js/453.e561bf70.chunk.js",
+    "index.html": "/simplex/index.html",
+    "main.a8442ae0.css.map": "/simplex/static/css/main.a8442ae0.css.map",
+    "main.9558155c.js.map": "/simplex/static/js/main.9558155c.js.map",
+    "453.e561bf70.chunk.js.map": "/simplex/static/js/453.e561bf70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8442ae0.css",
+    "static/js/main.9558155c.js"
+  ]
+}
